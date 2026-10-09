@@ -1,0 +1,36 @@
+{
+  "name": "crunchy-trail",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Crunchy Trail – a cozy 3D ASMR game for YouTube Playables, iOS and Android",
+  "scripts": {
+    "dev": "vite --host",
+    "typecheck": "tsc --noEmit",
+    "build:web": "vite build --mode web --outDir dist-web",
+    "build:youtube": "vite build --mode youtube --outDir dist-youtube && node scripts/package-youtube.mjs",
+    "build:native": "vite build --mode native --outDir dist-native",
+    "cap:sync": "npm run build:native && npx cap sync",
+    "ios": "npm run cap:sync && npx cap open ios",
+    "android": "npm run cap:sync && npx cap open android",
+    "preview": "vite preview --host --outDir dist-web"
+  },
+  "dependencies": {
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/haptics": "^8.0.2",
+    "@capacitor/preferences": "^8.0.1",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.4",
+    "@fontsource/baloo-2": "^5.3.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/ios": "^8.5.3",
+    "@types/three": "^0.186.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4"
+  }
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--YT_SDK-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffe4ef" />
+    <meta name="description" content="Crunchy Trail – a cozy 3D ASMR game. Walk, pop, crunch and squish your way across satisfying worlds." />
+    <title>Crunchy Trail</title>
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #ffe9f1; overscroll-behavior: none; }
+      #loading {
+        position: fixed; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px;
+        background: radial-gradient(120% 90% at 50% 20%, #fff7fb 0%, #ffe3ee 45%, #d9d2ff 100%);
+        transition: opacity .3s ease;
+      }
+      #loading.hide { opacity: 0; pointer-events: none; }
+      .ld-blob {
+        position: relative; width: 112px; height: 98px; border-radius: 50% 50% 46% 46% / 58% 58% 42% 42%;
+        background: radial-gradient(circle at 35% 30%, #ffffff 0%, #fff4e8 45%, #f6dcc8 100%);
+        box-shadow: 0 18px 30px -12px rgba(150, 80, 120, .35), inset 0 -8px 16px rgba(230, 170, 150, .35);
+        animation: ld-bounce .9s cubic-bezier(.3,.7,.4,1) infinite;
+      }
+      .ld-eye { position: absolute; top: 38px; width: 11px; height: 13px; border-radius: 50%; background: #241d2c; }
+      .ld-eye::after { content: ''; position: absolute; top: 2px; left: 2px; width: 4px; height: 4px; border-radius: 50%; background: #fff; }
+      .ld-eye.l { left: 34px; } .ld-eye.r { right: 34px; }
+      .ld-cheek { position: absolute; top: 55px; width: 16px; height: 9px; border-radius: 50%; background: #ff9fb6; opacity: .6; }
+      .ld-cheek.l { left: 18px; } .ld-cheek.r { right: 18px; }
+      .ld-shadow { width: 84px; height: 14px; margin-top: -18px; border-radius: 50%; background: rgba(120, 70, 120, .16); animation: ld-shadow .9s cubic-bezier(.3,.7,.4,1) infinite; }
+      .ld-bar { width: min(220px, 56vw); height: 14px; border-radius: 99px; background: rgba(255,255,255,.7); box-shadow: inset 0 2px 4px rgba(120,70,120,.15); overflow: hidden; }
+      .ld-fill { height: 100%; width: 100%; transform-origin: left; transform: scaleX(.04); border-radius: 99px; background: linear-gradient(90deg, #ff9ab9, #b9a3ff); transition: transform .25s ease; }
+      #loading.error .ld-bar { background: #ffd0d0; }
+      @keyframes ld-bounce { 0%,100% { transform: translateY(0) scale(1.06,.92); } 45% { transform: translateY(-34px) scale(.95,1.06); } }
+      @keyframes ld-shadow { 0%,100% { transform: scale(1); opacity: 1; } 45% { transform: scale(.7); opacity: .5; } }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene"></canvas>
+      <div id="vignette"></div>
+      <div id="ui"></div>
+    </div>
+    <div id="loading" aria-busy="true">
+      <div class="ld-blob"><i class="ld-eye l"></i><i class="ld-eye r"></i><i class="ld-cheek l"></i><i class="ld-cheek r"></i></div>
+      <div class="ld-shadow"></div>
+      <div class="ld-bar"><div class="ld-fill"></div></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

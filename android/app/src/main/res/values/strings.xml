@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Crunchy Trail</string>
+    <string name="title_activity_main">Crunchy Trail</string>
+    <string name="package_name">com.crunchytrail.asmr</string>
+    <string name="custom_url_scheme">com.crunchytrail.asmr</string>
+</resources>

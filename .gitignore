@@ -1,0 +1,11 @@
+node_modules
+dist-web
+dist-youtube
+dist-native
+release
+.DS_Store
+*.log
+art/raw/*.log
+build/
+.audio-src/
+.claude/

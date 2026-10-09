@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "groups": {
+    "pop": {
+      "files": [
+        "pop_01.mp3",
+        "pop_02.mp3",
+        "pop_03.mp3",
+        "pop_04.mp3",
+        "pop_05.mp3",
+        "pop_06.mp3",
+        "pop_07.mp3",
+        "pop_08.mp3"
+      ],
+      "gain": 0.9
+    },
+    "popit": {
+      "files": [
+        "popit_01.mp3",
+        "popit_02.mp3",
+        "popit_03.mp3",
+        "popit_04.mp3",
+        "popit_05.mp3",
+        "popit_06.mp3"
+      ],
+      "gain": 0.65
+    },
+    "grass": {
+      "files": [
+        "grass_01.mp3",
+        "grass_02.mp3",
+        "grass_03.mp3",
+        "grass_04.mp3",
+        "grass_05.mp3",
+        "grass_06.mp3"
+      ],
+      "gain": 0.41
+    },
+    "snow": {
+      "files": [
+        "snow_01.mp3",
+        "snow_02.mp3",
+        "snow_03.mp3",
+        "snow_04.mp3",
+        "snow_05.mp3",
+        "snow_06.mp3",
+        "snow_07.mp3",
+        "snow_08.mp3"
+      ],
+      "gain": 0.17
+    },
+    "leaves": {
+      "files": [
+        "leaves_01.mp3",
+        "leaves_02.mp3",
+        "leaves_03.mp3",
+        "leaves_04.mp3",
+        "leaves_05.mp3",
+        "leaves_06.mp3",
+        "leaves_07.mp3",
+        "leaves_08.mp3"
+      ],
+      "gain": 0.31
+    },
+    "sand": {
+      "files": [
+        "sand_01.mp3",
+        "sand_02.mp3",
+        "sand_03.mp3",
+        "sand_04.mp3",
+        "sand_05.mp3",
+        "sand_06.mp3",
+        "sand_07.mp3",
+        "sand_08.mp3"
+      ],
+      "gain": 0.39
+    },
+    "slime": {
+      "files": [
+        "slime_01.mp3",
+        "slime_02.mp3",
+        "slime_03.mp3",
+        "slime_04.mp3",
+        "slime_05.mp3",
+        "slime_06.mp3",
+        "slime_07.mp3",
+        "slime_08.mp3"
+      ],
+      "gain": 0.24
+    },
+    "ice": {
+      "files": [
+        "ice_01.mp3",
+        "ice_02.mp3",
+        "ice_03.mp3",
+        "ice_04.mp3",
+        "ice_05.mp3",
+        "ice_06.mp3",
+        "ice_07.mp3",
+        "ice_08.mp3"
+      ],
+      "gain": 0.49
+    },
+    "wood": {
+      "files": [
+        "wood_01.mp3",
+        "wood_02.mp3",
+        "wood_03.mp3",
+        "wood_04.mp3",
+        "wood_05.mp3",
+        "wood_06.mp3"
+      ],
+      "gain": 0.15
+    },
+    "step": {
+      "files": [
+        "step_01.mp3",
+        "step_02.mp3",
+        "step_03.mp3",
+        "step_04.mp3"
+      ],
+      "gain": 0.07
+    },
+    "keys": {
+      "files": [
+        "keys_01.mp3",
+        "keys_02.mp3",
+        "keys_03.mp3",
+        "keys_04.mp3",
+        "keys_05.mp3",
+        "keys_06.mp3",
+        "keys_07.mp3",
+        "keys_08.mp3",
+        "keys_09.mp3",
+        "keys_10.mp3",
+        "keys_11.mp3",
+        "keys_12.mp3"
+      ],
+      "gain": 0.53
+    },
+    "kalimba": {
+      "files": [
+        "kalimba_01.mp3",
+        "kalimba_02.mp3",
+        "kalimba_03.mp3"
+      ],
+      "midi": [
+        72,
+        60,
+        79
+      ],
+      "gain": 0.25
+    },
+    "coin": {
+      "files": [
+        "coin_01.mp3",
+        "coin_02.mp3",
+        "coin_03.mp3"
+      ],
+      "gain": 0.11
+    },
+    "ui_tap": {
+      "files": [
+        "ui_tap_01.mp3",
+        "ui_tap_02.mp3",
+        "ui_tap_03.mp3"
+      ],
+      "gain": 0.09
+    },
+    "ui_whoosh": {
+      "files": [
+        "ui_whoosh_01.mp3",
+        "ui_whoosh_02.mp3"
+      ],
+      "gain": 0.05
+    },
+    "win": {
+      "files": [
+        "win_01.mp3",
+        "win_02.mp3"
+      ],
+      "gain": 0.14
+    },
+    "sparkle": {
+      "files": [
+        "sparkle_01.mp3",
+        "sparkle_02.mp3"
+      ],
+      "gain": 0.06
+    },
+    "amb_meadow": {
+      "files": [
+        "amb_meadow.mp3"
+      ],
+      "loop": true,
+      "gain": 0.07
+    },
+    "amb_winter": {
+      "files": [
+        "amb_winter.mp3"
+      ],
+      "loop": true,
+      "gain": 0.07
+    },
+    "amb_cozy": {
+      "files": [
+        "amb_cozy.mp3"
+      ],
+      "loop": true,
+      "gain": 0.11
+    },
+    "music": {
+      "files": [
+        "music.mp3"
+      ],
+      "loop": true,
+      "gain": 0.07
+    }
+  }
+}
