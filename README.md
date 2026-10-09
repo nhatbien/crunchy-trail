@@ -1,5 +1,7 @@
 # Crunchy Trail – ASMR 3D
 
+**Chơi ngay trên web:** https://nhatbien.github.io/crunchy-trail/ (tự deploy từ nhánh `main` bằng GitHub Actions).
+
 Game 3D thư giãn kiểu ASMR cho **YouTube Playables**, **iOS** và **Android**, dùng chung một codebase (Three.js + TypeScript + Vite, đóng gói native bằng Capacitor).
 
 Bạn điều khiển "Mochi", một bé mochi mềm mềm, đi dạo trên **một vùng đất liền** gồm 10 khu nối liền nhau: lưới 3×3 khu nhỏ (mỗi khu 8×8 đơn vị) cộng một dải bàn phím cơ dài ở phía đông (8×24). Đi tới đâu, vật liệu ở đó bị nghiền và phát âm thanh ASMR ngay tại chỗ, pan trái/phải theo vị trí:
